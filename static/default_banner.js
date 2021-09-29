@@ -257,6 +257,9 @@ This file is part of pywb, https://github.com/webrecorder/pywb
   DefaultBanner.prototype.set_banner = function(url, ts, is_live, title) {
     var capture_str;
     var title_str;
+    var UPDATED_BANNER_H1 = "You Are Viewing a Read-Only Website";
+    var UPDATED_BANNER_H2 = "Site search, filters, and sorting options are disabled."
+
 
     if (!url) {
       this.captureInfo.innerHTML = window.banner_info.loadingLabel;
@@ -276,7 +279,7 @@ This file is part of pywb, https://github.com/webrecorder/pywb
 
     title_str = capture_str;
 
-    capture_str = "<b id='title_or_url' title='" + capture_str + "'>" + capture_str + "</b>";
+    capture_str = "<b id='title_or_url' title='" + capture_str + "'>" + UPDATED_BANNER_H1 + "</b>";
 
     capture_str += "<span class='_wb_capture_date'>";
 
@@ -285,7 +288,7 @@ This file is part of pywb, https://github.com/webrecorder/pywb
       capture_str += "<b>" + window.banner_info.liveMsg + "&nbsp;</b>";
     }
 
-    capture_str += this.ts_to_date(ts, window.banner_info.is_gmt);
+    capture_str += UPDATED_BANNER_H2
     capture_str += "</span>";
 
     this.calendarLink.setAttribute("href", window.banner_info.prefix + "*/" + url);

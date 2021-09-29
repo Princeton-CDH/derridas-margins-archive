@@ -1,20 +1,24 @@
 
+#calendarLink {
+    visibility: hidden;
+}
+
 #_wb_frame_top_banner
 {
     display: block !important;
     top: 0px !important;
     left: 0px !important;
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
     width: 100% !important;
     font-size: 18px !important;
-    background-color: #444 !important;
-    color: white !important;
+    background-color: #FFB36D !important;
+    color: black !important;
     z-index: 2147483643 !important;
     line-height: normal !important;
 
     position: absolute !important;
     border: 0px;
-    height: 44px !important;
+    height: 100px !important;
 
     display: flex !important;
     display: -webkit-box !important;
