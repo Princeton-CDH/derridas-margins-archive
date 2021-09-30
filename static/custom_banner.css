@@ -45,7 +45,50 @@
     max-width: 100%;
 }
 
-/*If iframe CSS is not included, the site isn't visible (!)*/
+._wb_capture_date
+{
+    font-size: 13px;
+}
+
+#_wb_capture_info
+{
+    flex-grow: 1;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex: 1;
+
+    min-width: 0;
+    margin: 0 15px;
+
+    display: flex !important;
+    display: -webkit-box !important;
+    display: -moz-box !important;
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+
+    flex-direction: column;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -moz-box-direction: normal;
+    -moz-box-orient: vertical;
+    -ms-flex-direction: column;
+
+    justify-content: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+
+    align-items: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*If iframe CSS is not included, the site won't be visible (!)*/
 
 #wb_iframe_div
 {
