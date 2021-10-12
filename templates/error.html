@@ -7,26 +7,29 @@
     </div>
     <div class="row">
         <div class="col-12 text-center">
-        {% if err_status == 451 %}
+            {% if err_status == 451 %}
             <p class="lead">{% trans %}Access Blocked to {{ err_msg }}{% endtrans %}</p>
 
-        {% elif err_status == 404 and err_details == 'coll_not_found' %}
+            {% elif err_status == 404 and err_details == 'coll_not_found' %}
             <p>{% trans %}Collection not found: <b>{{ err_msg }}{% endtrans %}</b></p>
 
             <p><a href="/{{ env.pywb_lang | default('') }}">{{ _('See list of valid collections') }}</a></p>
 
-        {% elif err_status == 404 and err_details == 'static_file_not_found' %}
+            {% elif err_status == 404 and err_details == 'static_file_not_found' %}
             <p>{% trans %}Static file not found: <b>{{ err_msg }}{% endtrans %}</b></p>
 
-        {% else %}
+            {% else %}
 
-            <p class="lead">{{ err_msg }}</p>
-
-            {% if err_details %}
-                <p class="lead">{% trans %}Error Details:{% endtrans %}</p>
-                <pre>{{ err_details }}</pre>
+            <article class="error-page">
+                <div class="container">
+                    <h1 class="error-page__title">A crack in the program.</h1>
+                    <p class="error-page__subtitle">500 Error</p>
+                    <p>There was a server error when processing your request.</p>
+                    <img class="error-page__image" src="{{ static_prefix }}/404_img.png" alt="empty bookshelf" />
+                </div>
+            </article>
             {% endif %}
-        {% endif %}
+            {% endif %}
         </div>
     </div>
 </div>
