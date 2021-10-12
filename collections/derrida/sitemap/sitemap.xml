@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<sitemap><loc>https://derridas-margins.princeton.edu/sitemap-book-pages.xml</loc></sitemap><sitemap><loc>https://derridas-margins.princeton.edu/sitemap-books.xml</loc></sitemap><sitemap><loc>https://derridas-margins.princeton.edu/sitemap-pages.xml</loc></sitemap><sitemap><loc>https://derridas-margins.princeton.edu/sitemap-book-references.xml</loc></sitemap><sitemap><loc>https://derridas-margins.princeton.edu/sitemap-book-gallery.xml</loc></sitemap>
+    <sitemap>
+        <loc>https://derridas-margins.princeton.edu/sitemap-book-pages.xml</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://derridas-margins.princeton.edu/sitemap-books.xml</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://derridas-margins.princeton.edu/sitemap-pages.xml</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://derridas-margins.princeton.edu/sitemap-book-references.xml</loc>
+    </sitemap>
+    <sitemap>
+        <loc>https://derridas-margins.princeton.edu/sitemap-book-gallery.xml</loc>
+    </sitemap>
 </sitemapindex>
