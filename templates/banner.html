@@ -1,7 +1,6 @@
 {% if not env.pywb_proxy_magic or config.proxy.enable_banner | default(true) %}
 {% autoescape false %}
 
-<!-- default banner, create through js -->
 <link rel='stylesheet' href='{{ static_prefix }}/custom_banner.css'/>
 
 <div id="_wb_custom_banner">
