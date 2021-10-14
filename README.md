@@ -19,6 +19,9 @@ After installation, run a server locally:
 wayback -a
 ```
 
+Then navigate to http://localhost:8080/derrida/https://derridas-margins.princeton.edu/
+
+
 **NOTE:** Mac users who have upgraded to Big Sur will run into [an error.](https://github.com/webrecorder/pywb/issues/616) A recommended quick fix is to go to `fakeredis.py` in your virtual environment and swap the line...
 
 ```python
