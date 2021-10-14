@@ -2,8 +2,10 @@
 # ========================================
 #
 
-collections:
-    all: derrida
+# this is the default; configure to just derrida?
+# collections:
+#     all: $all
+
 
 # Settings for each collection
 use_js_obj_proxy: true
