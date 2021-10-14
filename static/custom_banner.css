@@ -1,89 +1,37 @@
 * {
-    --banner-height: 100px;
+    --banner-height: 80px;
 }
 
 
-#_wb_custom_banner
-{
-    display: block !important;
-    top: 0px !important;
-    left: 0px !important;
-    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif !important;
-    width: 100% !important;
-    font-size: 31px !important;
-    background-color: #FFB36D !important;
-    color: black !important;
-    z-index: 2147483643 !important;
-    line-height: normal !important;
-
-    position: absolute !important;
-    border: 0px;
-    height: var(--banner-height) !important;
-
-    display: flex !important;
-    display: -webkit-box !important;
-    display: -moz-box !important;
-    display: -webkit-flex !important;
-    display: -ms-flexbox !important;
-
-    justify-content: space-between;
-    -webkit-box-pack: justify;
-    -moz-box-pack: justify;
-    -ms-flex-pack: justify;
-    align-items: center;
-    -webkit-box-align: center;
-    -moz-box-align: center;
-    -ms-flex-align: center;
-}
-
-#title_or_url
-{
-    display: block !important;
-    white-space: nowrap;
+#wayback-banner {
+    width: 100%;
+    min-width: 330px;
+    height: var(--banner-height);
+    background-color: #FFB36D;
+    text-align: center;
+    padding: 15px;
     overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 100%;
 }
 
-._wb_capture_date
-{
-    font-size: 13px;
+#wayback-banner h1 {
+    /* adjust sizes from derrida default and use body font instead of title font */
+    font-size: 1.15em;
+    font-weight: bold;
+    margin: 0;
+    font-family: "UniversLTPro-55Roman", "Helvetica", "Arial", sans-serif;
 }
 
-#_wb_capture_info
-{
-    flex-grow: 1;
-    -webkit-box-flex: 1;
-    -moz-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex: 1;
+@media (min-width: 650px) {
+    * {
+        --banner-height: 70px;
+    }
 
-    min-width: 0;
-    margin: 0 15px;
+    #wayback-banner h1 {
+        font-size: 1.75em;
+    }
+}
 
-    display: flex !important;
-    display: -webkit-box !important;
-    display: -moz-box !important;
-    display: -webkit-flex !important;
-    display: -ms-flexbox !important;
-
-    flex-direction: column;
-    -webkit-box-direction: normal;
-    -webkit-box-orient: vertical;
-    -moz-box-direction: normal;
-    -moz-box-orient: vertical;
-    -ms-flex-direction: column;
-
-    justify-content: center;
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    -ms-flex-pack: center;
-
-    align-items: center;
-    -webkit-box-align: center;
-    -moz-box-align: center;
-    -ms-flex-align: center;
-
-    height: 100%;
-    -webkit-font-smoothing: antialiased;
+/* shift top left and top right coordinate navigation to compensate for the banner */
+.coordinate-navigation a:first-child, .coordinate-navigation a:nth-child(3)  {
+    margin-top: var(--banner-height);
 }
