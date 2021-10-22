@@ -1,0 +1,37 @@
+* {
+    --banner-height: 80px;
+}
+
+
+#wayback-banner {
+    width: 100%;
+    min-width: 330px;
+    height: var(--banner-height);
+    background-color: #FFB36D;
+    text-align: center;
+    padding: 15px;
+    overflow: hidden;
+}
+
+#wayback-banner h1 {
+    /* adjust sizes from derrida default and use body font instead of title font */
+    font-size: 1.15em;
+    font-weight: bold;
+    margin: 0;
+    font-family: "UniversLTPro-55Roman", "Helvetica", "Arial", sans-serif;
+}
+
+@media (min-width: 650px) {
+    * {
+        --banner-height: 70px;
+    }
+
+    #wayback-banner h1 {
+        font-size: 1.75em;
+    }
+}
+
+/* shift top left and top right coordinate navigation to compensate for the banner */
+.coordinate-navigation a:first-child, .coordinate-navigation a:nth-child(3)  {
+    margin-top: var(--banner-height);
+}

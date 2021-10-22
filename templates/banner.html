@@ -1,0 +1,12 @@
+{% if not env.pywb_proxy_magic or config.proxy.enable_banner | default(true) %}
+{% autoescape false %}
+
+<link rel='stylesheet' href='{{ static_prefix }}/custom_banner.css'/>
+
+<section id="wayback-banner">
+    <h1>You Are Viewing a Read-Only Website</h1>
+    <p>Site search, filters, and sorting options are disabled.</p>
+</section>
+
+{% endautoescape %}
+{% endif %}
