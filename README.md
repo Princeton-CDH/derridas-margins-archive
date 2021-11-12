@@ -16,7 +16,7 @@ pip install -r requirements.txt
 After installation, run a server locally:
 
 ```sh
-wayback -a
+wayback
 ```
 
 Then navigate to http://localhost:8080/derrida/https://derridas-margins.princeton.edu/
