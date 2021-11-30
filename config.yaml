@@ -13,6 +13,9 @@ use_js_obj_proxy: true
 # Replay content in an iframe
 framed_replay: false
 
+# set pywb static prefix to not conflict with archive site static
+static_prefix: "pywb_static"
+
 
 # uncomment and change to set default locale
 # default_locale: en
