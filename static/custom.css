@@ -2,7 +2,6 @@
     --banner-height: 80px;
 }
 
-
 #wayback-banner {
     width: 100%;
     min-width: 330px;
@@ -34,4 +33,27 @@
 /* shift top left and top right coordinate navigation to compensate for the banner */
 .coordinate-navigation a:first-child, .coordinate-navigation a:nth-child(3)  {
     margin-top: var(--banner-height);
+}
+
+/* disable search inputs and filters */
+.page-filter, .filter__section--toggles {
+    cursor: not-allowed;
+}
+
+.header__search-button {
+    display: none;
+}
+
+.page-filter input, .page-filter select, .page-filter label, .page-filter button, .mdl-switch__track, .clear-link, #id_order_by, .frequency_chart {
+    pointer-events: none;
+    opacity: 0.65;
+}
+
+.mdl-textfield  {
+    opacity: 0.65;
+}
+
+.filter__section:not(.filter__section--toggles) .filter__selector {
+    cursor: pointer;
+    pointer-events: auto;
 }
