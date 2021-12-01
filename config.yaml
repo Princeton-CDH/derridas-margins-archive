@@ -2,20 +2,13 @@
 # ========================================
 #
 
-# this is the default; configure to just derrida?
-# collections:
-#     all: $all
-
-
-# Settings for each collection
-use_js_obj_proxy: true
-
 # Replay content in an iframe
 framed_replay: false
 
 # set pywb static prefix to not conflict with archive site static
+# NOTE: this config is needed for nginx deploy, but may not work locally
+# Comment out for development if needed, but do not check in the change.
 static_prefix: "pywb_static"
-
 
 # uncomment and change to set default locale
 # default_locale: en
