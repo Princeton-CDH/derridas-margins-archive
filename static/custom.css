@@ -10,6 +10,8 @@
     text-align: center;
     padding: 15px;
     overflow: hidden;
+    position: absolute;
+    top: 0;
     z-index: 50; /* above mobile nav? (not working for transition) */
 }
 
@@ -37,7 +39,7 @@
 }
 
 /* shift mobile nav down for the banner */
-.mdl-layout__drawer-button {
+.mdl-layout__drawer-button, .mdl-layout__header {
     top: var(--banner-height) !important;
 }
 

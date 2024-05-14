@@ -5,7 +5,7 @@ the CDH's Derrida's Margins site.
 
 ## Installation
 
-Create a Python 3.7 environment and install dependencies
+Create a Python 3.11 environment and install dependencies
 
 ```sh
 pip install -r requirements.txt
