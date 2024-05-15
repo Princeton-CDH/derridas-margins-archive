@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://derridas-margins.princeton.edu/contact/</loc>
@@ -16,7 +16,7 @@
         <loc>https://derridas-margins.princeton.edu/library/</loc>
         <priority>0.7</priority>
         <changefreq>never</changefreq>
-    </url>
+    <lastmod>2024-05</lastmod></url>
     <url>
         <loc>https://derridas-margins.princeton.edu/</loc>
         <lastmod>2018-09-13</lastmod>
@@ -33,12 +33,12 @@
         <loc>https://derridas-margins.princeton.edu/interventions/</loc>
         <priority>0.7</priority>
         <changefreq>never</changefreq>
-    </url>
+    <lastmod>2024-05</lastmod></url>
     <url>
         <loc>https://derridas-margins.princeton.edu/outwork/</loc>
         <priority>0.6</priority>
         <changefreq>never</changefreq>
-    </url>
+    <lastmod>2024-05</lastmod></url>
     <url>
         <loc>https://derridas-margins.princeton.edu/outwork/2018/culture-et-ecriture-la-proliferation-des-livres-et-la-fin-du-livre/</loc>
         <lastmod>2018-05-02</lastmod>
@@ -55,7 +55,7 @@
         <loc>https://derridas-margins.princeton.edu/references/</loc>
         <priority>0.7</priority>
         <changefreq>never</changefreq>
-    </url>
+    <lastmod>2024-05</lastmod></url>
     <url>
         <loc>https://derridas-margins.princeton.edu/technical/</loc>
         <lastmod>2018-12-17</lastmod>
@@ -66,10 +66,10 @@
         <loc>https://derridas-margins.princeton.edu/references/histogram/de-la-grammatologie/</loc>
         <priority>0.7</priority>
         <changefreq>never</changefreq>
-    </url>
+    <lastmod>2024-05</lastmod></url>
     <url>
         <loc>https://derridas-margins.princeton.edu/references/histogram/</loc>
         <priority>0.5</priority>
         <changefreq>never</changefreq>
-    </url>
+    <lastmod>2024-05</lastmod></url>
 </urlset>
