@@ -1,10 +1,16 @@
 #!/usr/bin/env python
 """"
-script to populate all entries in a sitemap.xml file with
-a specified last modification date
+Script to populate all entries in a sitemap.xml file with
+a specified last modification date. Only sets last modification
+date on entries that don't already have a date.
 
-setup:
-- `pip install lxml`
+Setup:
+- `pip install eulxml`
+
+Example usage:
+```sh
+python scripts/sitemap-lastmod.py 2024-05 static/sitemap-*.xml
+```
 
 """
 import csv
