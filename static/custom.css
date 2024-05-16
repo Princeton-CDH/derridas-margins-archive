@@ -45,6 +45,8 @@
 
 .mdl-layout__drawer.is-visible {
     top: var(--banner-height) !important;
+    /* adjust alignment so we don't get a gap between nav and menu */
+    margin-top: -6px;
 }
 
 /* image gallery has a different layout */
