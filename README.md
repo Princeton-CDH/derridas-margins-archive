@@ -1,9 +1,14 @@
-# derridas-margins-archive
+# Derrida's Margins (web archive)
 
-Using the Wayback Machine's python tools to archive and deploy
-the CDH's Derrida's Margins site.
+This is a web archive [Derrida's Margins](https://cdh.princeton.edu/projects/derridas-margins/),
+a research project sponsored by the Center for Digital Humanities at Princeton.
 
-## Installation
+> Chenoweth, Katie, Alexander Baron-Raiffe, and Rebecca Sutton Koeser (eds.). Derrida’s Margins, version 1.3.3. Center for Digital Humanities at Princeton, 2018. http://derridas-margins.princeton.edu.
+
+The web archive files were created in 2021 with [Browsertrix Crawler](https://github.com/webrecorder/browsertrix-crawler); custom behaviors were used to capture specific interactive
+portions of the site.
+
+## Running locally
 
 Create a Python 3.11 environment and install dependencies
 
@@ -11,25 +16,10 @@ Create a Python 3.11 environment and install dependencies
 pip install -r requirements.txt
 ```
 
-## Development
-
-After installation, run a server locally:
+After installation, start the wayback server:
 
 ```sh
 wayback
 ```
-
 Then navigate to http://localhost:8080/derrida/https://derridas-margins.princeton.edu/
 
-
-**NOTE:** Mac users who have upgraded to Big Sur will run into [an error.](https://github.com/webrecorder/pywb/issues/616) A recommended quick fix is to go to `fakeredis.py` in your virtual environment and swap the line...
-
-```python
-_libc_library = find_library('c') or find_library('msvcrt') or find_library('System')
-```
-
-...with...
-
-```python
-_libc_library = 'libc.dylib'
-```
