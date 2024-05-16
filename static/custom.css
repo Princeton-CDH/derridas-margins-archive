@@ -47,13 +47,19 @@
     top: var(--banner-height) !important;
 }
 
+/* image gallery has a different layout */
+main#book-image-gallery {
+    margin-top: var(--banner-height);
+}
+
 /* disable search inputs and filters */
 .page-filter, .filter__section--toggles {
     cursor: not-allowed;
 }
-
+/* disable site search; simpler for layout if it's present instead of hidden */
 .header__search-button {
-    display: none;
+    pointer-events: none !important;
+    opacity: 0.35;
 }
 
 .page-filter input, .page-filter select, .page-filter label, .page-filter button, .mdl-switch__track, .clear-link, #id_order_by, .frequency_chart {
