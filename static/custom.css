@@ -45,7 +45,7 @@
 
 .mdl-layout__drawer.is-visible {
     top: var(--banner-height) !important;
-    /* adjust alignment so we don't get a gap between nav and menu */
+    /* adjust alignment so we don'tss get a gap between nav and menu */
     margin-top: -6px;
 }
 
@@ -53,6 +53,16 @@
 main#book-image-gallery {
     margin-top: var(--banner-height);
 }
+/* disable deep zoom toggle */
+main#book-image-gallery a[data-value=zoom] {
+    pointer-events: none;
+    cursor: not-allowed;   /* doesn't actually  work with pointer-events none */
+    opacity: 0.5;
+}
+main#book-image-gallery a[data-value=annotations] {
+    pointer-events: none;
+}
+
 
 /* disable search inputs and filters */
 .page-filter, .filter__section--toggles {
@@ -61,6 +71,7 @@ main#book-image-gallery {
 /* disable site search; simpler for layout if it's present instead of hidden */
 .header__search-button {
     pointer-events: none !important;
+    cursor: not-allowed;
     opacity: 0.35;
 }
 
