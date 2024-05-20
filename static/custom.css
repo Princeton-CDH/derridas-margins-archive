@@ -68,12 +68,17 @@ img[src*="rightsstatements_org"] {
 }
 /* add fallback for missing PUL logo that doesn't display due to the way we're proxying */
 footer.gallery-image-view__footer::after { 
+    content: " ";
     aspect-ratio: 299 / 317;
     width: 27px;
     display: inline-block;
     position: relative;
     background-image: url('/static/pul_logo_icon.png');
     background-size: contain;
+}
+/* suppress the broken PUL logo img element */
+footer.gallery-image-view__footer img[src*="pul_logo_icon"] {
+    display: none;
 }
 
 /* disable search inputs and filters */
