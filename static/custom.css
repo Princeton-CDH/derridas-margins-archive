@@ -66,14 +66,14 @@ main#book-image-gallery a[data-value=annotations] {
 img[src*="rightsstatements_org"] {
     background-color: #f5f5f5;
 }
-/* override missing PUL logo that doesn't display due to the way we're proxying */
-footer.gallery-image-view__footer img[src*="pul_logo_icon"] {
+/* add fallback for missing PUL logo that doesn't display due to the way we're proxying */
+footer.gallery-image-view__footer::after { 
     aspect-ratio: 299 / 317;
     width: 27px;
     display: inline-block;
     position: relative;
-/*    background-image: url("https://figgy.princeton.edu/assets/pul_logo_icon-5333765252f2b86e34cd7c096c97e79495fe4656c5f787c5510a84ee6b67afd8.png");*/
     background-image: url('/static/pul_logo_icon.png');
+    background-size: contain;
 }
 
 /* disable search inputs and filters */
