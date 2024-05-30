@@ -1,0 +1,39 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Derrida's Margins web archive
+message: >-
+  If you use this dataset, please cite it using the metadata
+  from this file.
+type: dataset
+date-released: "2024-05-29"
+authors:
+  - given-names: Katie
+    family-names: Chenoweth
+    affiliation: Princeton University
+  - orcid: 'https://orcid.org/0000-0002-8762-8057'
+    given-names: Rebecca Sutton
+    family-names: Koeser
+    affiliation: Princeton University
+  - given-names: ' Alexander'
+    family-names: Baron-Raiffe
+identifiers:
+  - type: doi
+    value: 10.34770/yw3y-ze12
+    description: >-
+      DOI for this web archive deposited on Princeton Data
+      Commons
+repository-code: 'https://github.com/Princeton-CDH/derridas-margins-archive'
+url: 'https://cdh.princeton.edu/projects/derridas-margins/'
+repository: 'https://github.com/Princeton-CDH/derrida-django/'
+abstract: >-
+  A web archive of the Derrida's Margins digital humanities
+  research project
+keywords:
+  - digital humanities
+  - Jacques Derrida
+  - annotation
+  - citation
+  - web archives
+license: CC-BY-4.0
