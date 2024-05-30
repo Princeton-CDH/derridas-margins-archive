@@ -23,6 +23,17 @@
     font-family: "UniversLTPro-55Roman", "Helvetica", "Arial", sans-serif;
 }
 
+#wayback-banner .doi {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 5px 5px;
+    font-size: 0.8em;
+    color: #343434;
+    font-variant: small-caps;
+    text-decoration: none;
+}
+
 @media (min-width: 650px) {
     * {
         --banner-height: 70px;
